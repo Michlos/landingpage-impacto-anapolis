@@ -1,0 +1,18 @@
+{
+  "name": "tyres",
+  "homepage": "https://github.com/MichlosBSB/landingpage-impacto-anapolis",
+  "authors": [
+    "michlos <michlos@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

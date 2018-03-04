@@ -1,7 +1,6 @@
 header
 	+clearfix
 	min-height: 328px
-
 	background:
 		image: url('/images/header-mecanico.jpg')
 		position: right top
@@ -11,6 +10,15 @@ header
 		//size: cover
 		attachment: fixed
 		min-height: 260px
+	+breakpoint($celular)
+		background:
+			color: $vermelhoescuro
+			image: none
+	+breakpoint($tablet)
+		background:
+			color: $vermelhoescuro
+			image: none
+
 
 
 		// position:
@@ -18,15 +26,34 @@ header
 		// size:
 
 	.logo
-		//float: left
 		margin-left: 200px
 		margin-top: 50px
 		margin-right: 100px
 		float: left
-		
 		img
 			width: 386px
 			height: 143px
+		
+		+breakpoint($celular)
+			margin: 0px 0px 0px 0px
+			img
+				width: 350px
+				height: 100px
+			text-align: center
+			float: none
+		
+		+breakpoint($tablet)
+			//text-align: center
+			margin: 0px 0px 0px 0px
+			img
+				width: 350px
+				height: 100px
+			text-align: center
+			float: none
+
+
+
+				
 
 	.texto-topo
 		//float: right
@@ -38,6 +65,10 @@ header
 		font-size: 18px
 		//font-style: $boltitalico
 		text-shadow: 1px 1px 5px $branco, 0 0 60px $amarelo-sombra, 0 0 30px $amarelo-sombra
+		+breakpoint($tablet)
+			display: none
+		+breakpoint($celular)
+			display: none
 
 		p
 
@@ -57,6 +88,10 @@ header
 			image: url('/images/bg-cinza-transparente.png')
 			//opacity: 0.50
 		min-height: 110px
+		+breakpoint($celular)
+			min-height: 60px
+		+breakpoint($tablet)
+			min-height: 60px
 
 
 
@@ -65,12 +100,20 @@ header
 
 
 	.topo-titulo-servicos
+		+breakpoint($tablet)
+			display: none
+		+breakpoint($celular)
+			display: none
 		color: $branco
 		font-size: 20px
 		margin-top: 30px
 		margin-left: 140px
 
 	.lista-servicos
+		+breakpoint($tablet)
+			display: none
+		+breakpoint($celular)
+			display: none
 		margin-left: 140px
 		margin-top: 5px
 		margin-right: 250px
@@ -93,12 +136,26 @@ header
 		// height: 10px
 		margin-top: 15px
 		align-items: center
+		+breakpoint($celular)
+			margin-top: 10px
+			margin-bottom: 10px
+
 
 		.social
-
+			+breakpoint($tablet)
+					text-align: center
+			+breakpoint($celular)
+				text-align: center
+				margin: 0px 0px 0px 0px
+				margin-right: 0px
+			ul
+				
 			li
 				display: inline-block
 				margin-right: 40px
+				+breakpoint($celular)
+					margin-right: 0px
+
 
 				a
 					display: block
@@ -115,3 +172,4 @@ header
 						align: center
 						width: 20px
 						height: 20px
+					

@@ -91,8 +91,32 @@
 					</div>
 					
 				</div>
-				<div class="formulario-cadastro">
-					
+				<div class="formulario-cadastro form-group">
+					<form id="form-cadastro-cliente" name="form-cadastro-cliente" method="post" action="">
+						<p>
+							<p><span class="texto-formulario">Solicite seu Orçamento<br>ou Agendamento</span></p>
+							<select name="form-lojas" id="form-lojas">
+								<option value="centro" selected="selected">Anápolis Centro</option>
+								<option value="brasilpark">BrasilPark Shopping</option>
+							</select>
+						</p>
+						<p>
+							<label for="form-nome-cliente"></label>
+							<input name="form-nome-cliente" type="text" id="form-nome-cliente" value="Informe seu Nome" size="30" />
+						</p>
+						<p>
+							<label for="form-telefone"></label>
+							<input name="form-telefone" type="text" id="form-telefone" value="Informe seu Telefone" size="30" />
+						</p>
+						<p>
+							<label for="form-mensagem"></label>
+							<textarea name="form-mensagem" id="form-mensagem" cols="30" rows="6"></textarea>
+						</p>
+						<p><span class="botao">
+								<input type="submit" name="form-enviar" id="form-enviar" value="Enviar" />
+							</span>
+						</p>
+					</form>
 				</div>
 
 				<div class="texto-juridico">Imagens meramente ilustrativas</div>

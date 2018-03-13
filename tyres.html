@@ -121,7 +121,7 @@
 				</div>
 			-->
 				<div class="formulario-cadastro">
-					<form>
+					<form action="php/send-pneu.php" method="get" name="formulario-envio-pneu">
 						<div class="texto-formulario">
 							<p>Solicite seu Orçamento<br>ou Agendamento</p>
 						</div>
@@ -142,16 +142,16 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<input type="text" placeholder="Informe seu Nome" class="form-control" required>
+							<input name="form=nome" type="text" placeholder="Informe seu Nome" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<input type="email" placeholder="Infome Seu E-mail" class="form-control" required>
+							<input name="form-email" type="email" placeholder="Infome Seu E-mail" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<input type="number" placeholder="Informe seu Telefone" class="form-control" required>
+							<input name="form-fone" type="number" placeholder="(  ) _____-_____" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<textarea name="texto-formulario" id="" cols="30" rows="10" class="form-control"></textarea>
+							<textarea name="form-texto" id="" cols="30" rows="10" class="form-control"></textarea>
 						</div>
 						<div class="form-group">
 							<button class="form-control">Solicitar Orçamento</button>
